@@ -24,6 +24,10 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
             }
         }
         floid();
+        Graph temp = (Graph) graph;
+        temp.setFlagEdgeIter(false);
+        temp.setFlagEdgeIter(false);
+        graph = temp;
     }
     public void floid(){
         Iterator<EdgeData> edgeDageIterator = graph.edgeIter();

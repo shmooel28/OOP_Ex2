@@ -24,7 +24,12 @@ public class Graph implements DirectedWeightedGraph {
         this.edges = edges;
         count = mc;
     }
-
+    public void setFlagNodeIter(boolean flag){
+        this.flagNodeIter = flag;
+    }
+    public void setFlagEdgeIter(boolean flag){
+        this.flagEdgeIter = flag;
+    }
     @Override
     public NodeData getNode(int key) {
         if (nodes.containsKey(key))
