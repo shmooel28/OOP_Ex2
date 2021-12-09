@@ -54,8 +54,20 @@ UML
 ![Ex0 vpd](https://user-images.githubusercontent.com/93682110/145465458-4d55dddc-b1ee-4081-92cf-ed29ae171de9.png)
 
 GUI
+--
+main screen, with option to load, save, eddit the graph, run algorithm and display.
 
+![WhatsApp Image 2021-12-09 at 22 11 16](https://user-images.githubusercontent.com/93682110/145468814-1eabf2e4-8c35-429e-8321-1eede1f7cdba.jpeg)
 
+algorithm screen, with isConnected, shortestPathDist, shortPath, tsp and center.
 
+![WhatsApp Image 2021-12-09 at 22 10 57](https://user-images.githubusercontent.com/93682110/145468823-82f9bf69-cd5e-4d87-812a-5fcab9648c39.jpeg)
 
+eddit screen, with option to add Node, add Edge, remove Node and remove Edge.
+
+![WhatsApp Image 2021-12-09 at 22 10 26](https://user-images.githubusercontent.com/93682110/145468830-4310c8d6-a3d7-4847-8a15-3b1cd727bef7.jpeg)
+
+display screen with menu to back to the main screen
+
+![WhatsApp Image 2021-12-09 at 22 10 04](https://user-images.githubusercontent.com/93682110/145468838-82cabd25-7076-44e3-8409-a9fdb9f993c8.jpeg)
 
