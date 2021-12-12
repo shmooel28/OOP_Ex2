@@ -11,6 +11,7 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
     private DirectedWeightedGraph graph;
     private double[][] dist;
     private ArrayList<NodeData>[][]short_path;
+    private boolean floidFlag = false;
 
 
     @Override
@@ -23,7 +24,6 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
                 short_path[i][j] = new ArrayList<>();
             }
         }
-        floid();
         Graph temp = (Graph) graph;
         temp.setFlagEdgeIter(false);
         temp.setFlagEdgeIter(false);
@@ -129,6 +129,10 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
 
     @Override
     public double shortestPathDist(int src, int dest) {
+        if (floidFlag == false) {
+            floid();
+            floidFlag = true;
+        }
         if (!isConnected())
             return -1;
         if (dist[src][dest] == 2000000) return -1;
@@ -137,6 +141,11 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
 
     @Override
     public List<NodeData> shortestPath(int src, int dest) {
+        if (floidFlag == false) {
+            floid();
+            floidFlag = true;
+        }
+
         if (!isConnected())
             return null;
         return short_path[src][dest];
@@ -145,6 +154,10 @@ public class GraphAlgo implements DirectedWeightedGraphAlgorithms {
     @Override
     public NodeData center() {
         if (!isConnected()) return null;
+        if (floidFlag == false) {
+            floid();
+            floidFlag = true;
+        }
         double dis[] = new double[graph.nodeSize()];
         for (int i = 0; i < graph.nodeSize(); i++) {
             dis[i] = 0;
