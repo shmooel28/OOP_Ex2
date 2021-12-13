@@ -71,3 +71,45 @@ display screen with menu to back to the main screen
 
 ![WhatsApp Image 2021-12-09 at 22 10 04](https://user-images.githubusercontent.com/93682110/145468838-82cabd25-7076-44e3-8409-a9fdb9f993c8.jpeg)
 
+Result
+--
+1,000 - 
+
+        load graph:
+
+        center:
+        
+        isConnected:
+        
+        shortPathDist:
+
+10,000 - 
+          
+         load graph:
+         
+         center:
+         
+         isConnected:
+         
+         shortPathDist:
+
+100,000 - 
+
+          load graph:
+          
+          center:
+          
+          isConnected:
+          
+          shortPathDist:
+
+1,000,000 - 
+  
+            load graph:
+            
+            center:
+            
+            isConnected:
+            
+            shortPathDist:
+
