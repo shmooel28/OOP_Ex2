@@ -30,6 +30,12 @@ public class Graph implements DirectedWeightedGraph {
     public void setFlagEdgeIter(boolean flag){
         this.flagEdgeIter = flag;
     }
+    public boolean getFlagNodeIter(){
+        return flagNodeIter;
+    }
+    public boolean getFlagEdgeIter(){
+        return flagEdgeIter;
+    }
     @Override
     public NodeData getNode(int key) {
         if (nodes.containsKey(key))

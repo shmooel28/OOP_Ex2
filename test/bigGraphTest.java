@@ -6,17 +6,18 @@ public class bigGraphTest {
     @Test
     void Nodes_1000_Test(){
         DirectedWeightedGraphAlgorithms graphAlgorithms= new GraphAlgo();
-        graphAlgorithms.load("data/1000Nodes.json");
+        graphAlgorithms.load("1000Nodes.json");
         int center = graphAlgorithms.center().getKey();
+        graphAlgorithms.shortestPathDist(0,16);
         boolean flag = graphAlgorithms.isConnected();
         Assertions.assertTrue(flag);
     }
 
-    /*@Test
+    @Test
     void Nodes_10_000_Test(){
         DirectedWeightedGraphAlgorithms graphAlgorithms= new GraphAlgo();
-        graphAlgorithms.load("data/10000Nodes.json");
-        int center = graphAlgorithms.center().getKey();
+        graphAlgorithms.load("10000Nodes.json");
+        //int center = graphAlgorithms.center().getKey();
         boolean flag = graphAlgorithms.isConnected();
         Assertions.assertTrue(flag);
 
@@ -25,10 +26,10 @@ public class bigGraphTest {
     void Nodes_100_000_Test(){
         DirectedWeightedGraphAlgorithms graphAlgorithms= new GraphAlgo();
         graphAlgorithms.load("data/100000Nodes.json");
-        int center = graphAlgorithms.center().getKey();
+        //int center = graphAlgorithms.center().getKey();
         boolean flag = graphAlgorithms.isConnected();
         Assertions.assertTrue(flag);
 
-    }*/
+    }
 }
 

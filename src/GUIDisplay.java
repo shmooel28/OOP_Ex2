@@ -1,3 +1,4 @@
+import api.DirectedWeightedGraph;
 import api.EdgeData;
 import api.GeoLocation;
 import api.NodeData;
@@ -29,6 +30,8 @@ public class GUIDisplay extends JPanel{
     }
     @Override
     protected void paintComponent(Graphics g) {
+        boolean flag1 = ((Graph)GUI.graphAlgo.getGraph()).getFlagNodeIter();
+        boolean flag2 = ((Graph)GUI.graphAlgo.getGraph()).getFlagNodeIter();
         super.paintComponent(g);
         double scaleY,scaleX;
         double minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE, maxX = Integer.MIN_VALUE, maxY = Integer.MIN_VALUE;
@@ -67,9 +70,9 @@ public class GUIDisplay extends JPanel{
             int y2 = (int) ((dest.getLocation().y() - minY) * scaleY);
             g.drawLine(x1, y1, x2, y2);
             drawArrow(g,x1,y1,x2,y2);
-
-
         }
+        ((Graph)GUI.graphAlgo.getGraph()).setFlagNodeIter(flag1);
+        ((Graph)GUI.graphAlgo.getGraph()).setFlagNodeIter(flag2);
     }
     public GUIDisplay(){}
     public GUIDisplay(Boolean flag){
