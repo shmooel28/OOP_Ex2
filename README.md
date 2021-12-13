@@ -75,41 +75,35 @@ Result
 --
 1,000 - 
 
-        load graph:
+        load graph: 213ms
 
-        center:
+        center:3sec 465ms
         
-        isConnected:
+        isConnected: 15ms
         
-        shortPathDist:
+        shortPathDist: 16 ms
+        
+        save graph: 235ms
 
 10,000 - 
           
-         load graph:
+         load graph: 4sc 34ms
          
-         center:
+         center: 7 sc
          
-         isConnected:
+         isConnected: 206 ms
          
-         shortPathDist:
+         shortPathDist: 116 ms
+         
+         save graph: 300 ms
 
 100,000 - 
 
-          load graph:
+          load graph: 2 min
           
           center:
           
-          isConnected:
+          isConnected:30 sc
           
           shortPathDist:
-
-1,000,000 - 
-  
-            load graph:
-            
-            center:
-            
-            isConnected:
-            
-            shortPathDist:
 
